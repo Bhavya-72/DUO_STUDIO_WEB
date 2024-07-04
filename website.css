@@ -1,0 +1,251 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+    color: white;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+    
+}
+.cursor{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    position: fixed;
+    background-color: #EDBFFF;
+    z-index: 8;
+    mix-blend-mode: difference;
+    transition: background-image ease 0.5s;
+    background-position: center;
+    background-size: cover;
+    /* transition: left linear 0.1s top linear 0.1s; */
+}
+
+.main{
+    background-color: #0F0D0D;
+    cursor: none;
+
+}
+.page1{
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    z-index: 9;
+}
+#nav{
+    height: 55px;
+    width: 100%;
+    background-color:#0F0D0D;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 30px;
+}
+#nav img{
+    height: 24px;
+}
+#nav-part2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+#nav .circle{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+#nav h4{
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+#nav h4:nth-child(1){
+    border-bottom: 1.5px solid white;
+}
+/* #nav h4:hover{
+    text-decoration: 1px underline white;
+} */
+.page1>h1{
+    font-size: 8vw;
+    font-weight: 300;
+    font-family: 'c:\USERS\BHAVYA KUMAR\APPDATA\LOCAL\MICROSOFT\WINDOWS\FONTS\PPMORI-REGULAR.OTF';
+    margin-top: 12vw;
+    margin-left: 23vw;
+
+}
+.page1>h2{
+    font-size: 8vw;
+    font-weight: 300;
+    margin-left: 19vw;
+    font-family: 'c:\USERS\BHAVYA KUMAR\APPDATA\LOCAL\MICROSOFT\WINDOWS\FONTS\PPMORI-REGULAR.OTF';
+}
+.page1 .replacevideo{
+    width: 60%;
+    margin-top: 10vw;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+.page2{
+    min-height:80vh ;
+    width: 100%;
+    padding: 100px 5vw;
+    border-bottom: 2px solid #6c6c6c;
+    z-index: 9;
+    /* background-color: #f90404; */
+}
+
+.page2 h1{
+    font-size: 7vw;
+    font-weight: 500;
+    font-family: "PP Mori";
+    color:#0F0D0D;
+    /* background-color: #0F0D0D; */
+}
+.page2-container{
+    height: 60vh;
+    width: 100%;
+    /* background-color: #0F0D0D; */
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* padding: 0 5vw; */
+}
+.page2-left{
+    /* background-color: blue; */
+    width: 40%;
+}
+.page2-right{
+    /* background-color: blue; */
+    width: 24%;
+    
+}
+.page2-right p{
+    font-size: 28px;
+    color: #0F0D0D;
+}
+.page2-right button{
+    width: 100%;
+    border-radius: 50px;
+    border: none;
+    padding: 4px 0px;
+    background-color: #EDBFFF;
+    color: #0F0D0D;
+    margin-top: 20px;
+}
+.page2-left h2{
+
+    font-size: 4vw;
+    font-weight: 300;
+    color: #0F0D0D;
+    line-height: 4vw;
+}
+.page3{
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    padding-top: 100px;
+    z-index: 9;
+}
+.page3 h1{
+    font-size: 6.8vw;
+    margin-left: 100px;
+    font-weight: 600;
+    color: #0F0D0D;
+    
+}
+.page3-part1{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+}
+.page3-part1 img{
+    height: 600px;
+    margin-top: 160px;
+}
+
+.page4{
+    min-height: 100vh;
+    width: 100%;
+    z-index: 9;
+    position: relative;
+    padding: 170px 100px;
+}
+.elem{
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.elem img{
+    position: absolute;
+    opacity: 0;
+    transition: all ease-out 0.5s;
+    transform: translateY(10%) rotate(2deg);
+}
+.elem img:nth-child(1){
+    left: 2%;
+    height: 35vh;
+}
+.elem img:nth-child(3){
+    right:2%;
+}
+
+.elem h1{
+    font-size: 7vw;
+    align-items: center;
+    justify-content: center;
+    transition: all ease-out 0.5s;
+}
+.elem:hover h1{
+    transform: translateY(-100%);
+    color: #EDBFFF;
+}
+.text-div{
+    /* background-color: lightblue; */
+    height: 145px;
+    overflow: hidden;
+}
+.elem:hover img{
+    opacity: 1;
+    transform: translateY(0%) rotate(0deg);
+}
+.page5{
+    min-height: 100vh;
+    width: 100%;
+    z-index: 9;
+    position: relative;
+}
+.page5 h2{
+    font-size: 4vw;
+    text-transform: uppercase;
+    font-weight: 400;
+    z-index: 9;
+    padding: 140px 100px;
+}
+.box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+    padding: 0 20px;
+    border-top: 2px solid #dadada;
+}
+.box:nth-last-child(1){
+    border-bottom: 2px solid #dadada ;
+    margin-bottom: 8rem;
+}
+footer{
+    height: 90vh;
+    width: 100%;
+    background-color: #EDBFFF;
+}
